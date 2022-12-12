@@ -1,17 +1,16 @@
 package com.example.springcoretraining;
 
-public class Cat {
+public class Welder extends Employee{
 
-    private String name;
-    private int age;
-
-    public Cat() {
-        System.out.println("Котец создался");
-    }
-
-    public void sayYourInfo(){
-        System.out.println("Я не умею создавать нормальные методы. увы");
+    public Welder() {
+        System.out.println("Констуктор - Сварщик");
     }
 
 
+
+
+    @Override
+    public void sayYourInfo() {
+        System.out.println("Сварщик : Я не умею создавать нормальные методы. увы");
+    }
 }

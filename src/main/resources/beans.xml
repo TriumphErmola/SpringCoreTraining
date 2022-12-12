@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="welder"
+          class="com.example.springcoretraining.Welder">
+    </bean>
+
+
+
+    <bean id="adjuster"
+          class="com.example.springcoretraining.Adjuster">
+    </bean>
+
+    <bean id="employee"
+          class="com.example.springcoretraining.Employee">
+<!--        <constructor-arg ref="welder"/>-->
+        <property name="welder" ref="welder"/>
+    </bean>
+
+
+</beans>
