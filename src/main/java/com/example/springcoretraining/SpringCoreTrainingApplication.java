@@ -12,16 +12,9 @@ public class SpringCoreTrainingApplication {
 
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
 
-//        Employee employee1 = context.getBean("welder", Welder.class);
-//        employee1.sayYourInfo();
-//
-//        Employee employee2 = context.getBean("adjuster", Adjuster.class);
-//        employee2.sayYourInfo();
-
         Employee employee3 = context.getBean("employee",Employee.class);
 
-        employee3.sayYourInfo();
-
+        System.out.println(employee3);
 
         context.close();
 

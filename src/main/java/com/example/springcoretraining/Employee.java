@@ -2,7 +2,8 @@ package com.example.springcoretraining;
 
 public class Employee {
 
-    private String name;
+    private String firstName;
+    private String lastName;
     private String age;
 
     private Welder welder;
@@ -21,8 +22,39 @@ public class Employee {
     }
 
     public void sayYourInfo() {
-        System.out.println("Employee :Я не умею создавать нормальные методы. увы");
+        System.out.println("Employee : sayYourInfo()");
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age='" + age + '\'' +
+                '}';
+    }
 }

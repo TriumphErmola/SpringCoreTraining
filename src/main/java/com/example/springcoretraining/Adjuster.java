@@ -8,6 +8,6 @@ public class Adjuster extends Employee {
 
     @Override
     public void sayYourInfo() {
-        System.out.println("Монтажник : Я не умею создавать нормальные методы. увы");
+        System.out.println("Монтажник : sayYourInfo()");
     }
 }
